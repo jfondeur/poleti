@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  Theme Name:     Polétika Child theme
  Theme URI:      https://poletikard.com
@@ -6,8 +7,122 @@
  Author URI:     https://odsoluciones.com
  Template:       Divi
  Version:        2.0.0
-*/
+
+
 /* =Theme customization starts here
 ------------------------------------------------------- */
+/* line 40, styles/sass/style.scss */
+.custom-container-candidato {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 100px 0 50px;
+  display: grid;
+  grid-template-columns: 250px 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: auto;
+}
+/* line 48, styles/sass/style.scss */
+.custom-container-candidato .cats {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+/* line 53, styles/sass/style.scss */
+.custom-container-candidato .cats > div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+  color: #000000;
+}
+/* line 61, styles/sass/style.scss */
+.custom-container-candidato .cats > div:nth-child(even) {
+  background-color: whitesmoke;
+}
+/* line 66, styles/sass/style.scss */
+.custom-container-candidato .candidato_name {
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+/* line 74, styles/sass/style.scss */
+.custom-container-candidato .candidato_col .candidato_cat_points {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+/* line 80, styles/sass/style.scss */
+.custom-container-candidato .candidato_col .candidato_cat_points:nth-child(even) {
+  background-color: whitesmoke;
+}
+/* line 83, styles/sass/style.scss */
+.custom-container-candidato .candidato_col .candidato_cat_points img {
+  width: 22px !important;
+  height: 22px !important;
+}
 
-@import url("styles/stylesheets/style.css");
+/* line 93, styles/sass/style.scss */
+.container-intro, .container-footer {
+  margin: 88px auto 0;
+  padding: 70px 0;
+  background: whitesmoke;
+}
+/* line 97, styles/sass/style.scss */
+.container-intro h1, .container-footer h1 {
+  font-family: 'Roboto Slab',Georgia,"Times New Roman",serif;
+}
+/* line 100, styles/sass/style.scss */
+.container-intro p, .container-footer p {
+  width: 60%;
+}
+
+/* line 105, styles/sass/style.scss */
+.container-footer {
+  margin-top: 0;
+  background: white;
+}
+/* line 109, styles/sass/style.scss */
+.container-footer ul {
+  display: flex;
+}
+/* line 111, styles/sass/style.scss */
+.container-footer ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+/* line 115, styles/sass/style.scss */
+.container-footer ul li img {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 8px !important;
+}
+
+/* line 126, styles/sass/style.scss */
+.face-container {
+  position: relative;
+}
+/* line 128, styles/sass/style.scss */
+.face-container .tooltip {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  width: 100px;
+  left: -27px;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  background: black;
+  top: -24px;
+}
+/* line 139, styles/sass/style.scss */
+.face-container .tooltip a {
+  padding: 10px 5px;
+  text-align: center;
+}
