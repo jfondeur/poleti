@@ -1,0 +1,114 @@
+/* line 28, ../sass/style.scss */
+.custom-container-candidato {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 100px 0 50px;
+  display: grid;
+  grid-template-columns: 250px 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: auto;
+}
+/* line 36, ../sass/style.scss */
+.custom-container-candidato .cats {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+/* line 41, ../sass/style.scss */
+.custom-container-candidato .cats > div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+  color: #000000;
+}
+/* line 49, ../sass/style.scss */
+.custom-container-candidato .cats > div:nth-child(even) {
+  background-color: whitesmoke;
+}
+/* line 54, ../sass/style.scss */
+.custom-container-candidato .candidato_name {
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+/* line 62, ../sass/style.scss */
+.custom-container-candidato .candidato_col .candidato_cat_points {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+/* line 68, ../sass/style.scss */
+.custom-container-candidato .candidato_col .candidato_cat_points:nth-child(even) {
+  background-color: whitesmoke;
+}
+/* line 71, ../sass/style.scss */
+.custom-container-candidato .candidato_col .candidato_cat_points img {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+/* line 81, ../sass/style.scss */
+.container-intro, .container-footer {
+  margin: 88px auto 0;
+  padding: 70px 0;
+  background: whitesmoke;
+}
+/* line 85, ../sass/style.scss */
+.container-intro h1, .container-footer h1 {
+  font-family: 'Roboto Slab',Georgia,"Times New Roman",serif;
+}
+/* line 88, ../sass/style.scss */
+.container-intro p, .container-footer p {
+  width: 60%;
+}
+
+/* line 93, ../sass/style.scss */
+.container-footer {
+  margin-top: 0;
+  background: white;
+}
+/* line 97, ../sass/style.scss */
+.container-footer ul {
+  display: flex;
+}
+/* line 99, ../sass/style.scss */
+.container-footer ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+/* line 103, ../sass/style.scss */
+.container-footer ul li img {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 8px !important;
+}
+
+/* line 114, ../sass/style.scss */
+.face-container {
+  position: relative;
+}
+/* line 116, ../sass/style.scss */
+.face-container .tooltip {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  left: -27px;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  background: black;
+  top: -24px;
+}
+/* line 126, ../sass/style.scss */
+.face-container .tooltip a {
+  padding: 10px 5px;
+  text-align: center;
+}

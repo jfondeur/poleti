@@ -1,0 +1,131 @@
+//responsive
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+  
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+  
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+  
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+  
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+$table_color: whitesmoke;
+$table_text_color: #000000;
+
+.custom-container-candidato{
+  max-width:1080px;
+  margin:20px auto;
+  padding: 100px 0 50px;
+  // min-height:80vh;
+  display: grid;
+  grid-template-columns: 250px 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: auto;
+  .cats{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    > div {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      padding-left:15px;
+      color:$table_text_color;
+      &:nth-child(even){
+        background-color: $table_color;
+      }
+    }
+  }
+  .candidato_name{
+      height: 40px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color:$table_text_color;
+  }
+  .candidato_col{
+    .candidato_cat_points{
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size:14px;
+      &:nth-child(even){
+        background-color: $table_color;
+      }
+      img{
+        width: 22px !important;
+        height: 22px !important;
+      }
+    }
+  }
+}
+
+
+//intro
+.container-intro{
+  margin: 88px auto 0;
+  padding:70px 0;
+  background:whitesmoke;
+  h1{
+    font-family: 'Roboto Slab',Georgia,"Times New Roman",serif;
+  }
+  p{
+    width: 60%;
+  }
+}
+
+.container-footer{
+  @extend .container-intro;
+  margin-top: 0;
+  background:white;
+  ul{
+    display: flex;
+    li{
+      display:flex;
+      align-items: center;
+      margin-right: 10px;
+      img{
+        width: 20px!important;
+        height: 20px !important;
+        margin-right: 8px !important;
+
+      }
+    }
+  }
+}
+
+//tolltip
+.face-container{
+  position: relative;
+  .tooltip{
+    display: flex;
+    position: absolute;
+    width: 100px;
+    left: -27px;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    background: black;
+    top: -24px;
+    a{
+      padding:10px 5px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
