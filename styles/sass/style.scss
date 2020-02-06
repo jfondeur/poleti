@@ -114,6 +114,7 @@
   .face-container{
     position: relative;
     .tooltip{
+      visibility: hidden;
       display: flex;
       position: absolute;
       width: 100px;

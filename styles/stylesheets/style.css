@@ -97,6 +97,7 @@
 }
 /* line 116, ../sass/style.scss */
 .face-container .tooltip {
+  visibility: hidden;
   display: flex;
   position: absolute;
   width: 100px;
@@ -107,7 +108,7 @@
   background: black;
   top: -24px;
 }
-/* line 126, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .face-container .tooltip a {
   padding: 10px 5px;
   text-align: center;
